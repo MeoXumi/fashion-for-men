@@ -1,0 +1,270 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Fashion</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+}
+
+header{
+    background:white;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:600;
+}
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:64px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#ff6b35;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#ff6b35;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.feature h3{
+    margin-bottom:15px;
+}
+
+.cta{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:100px 10%;
+}
+
+.cta h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    nav{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">URBAN FASHION</div>
+
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Bộ sưu tập</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>THỜI TRANG NAM 2026</h1>
+        <p>Phong cách hiện đại - Chất lượng cao cấp - Giá tốt mỗi ngày</p>
+        <a href="#" class="btn">Mua Ngay</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80">
+            <div class="card-content">
+                <h3>Áo Thun Premium</h3>
+                <p>Chất liệu cotton 100%, thoáng mát.</p>
+                <br>
+                <div class="price">299.000đ</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80">
+            <div class="card-content">
+                <h3>Áo Khoác Urban</h3>
+                <p>Thiết kế trẻ trung, phù hợp mọi phong cách.</p>
+                <br>
+                <div class="price">799.000đ</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506629905607-d405b7a10e91?auto=format&fit=crop&w=900&q=80">
+            <div class="card-content">
+                <h3>Quần Jeans Slim Fit</h3>
+                <p>Kiểu dáng hiện đại, dễ phối đồ.</p>
+                <br>
+                <div class="price">599.000đ</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Tại Sao Chọn Chúng Tôi?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+            <h3>🚚 Giao Hàng Nhanh</h3>
+            <p>Giao toàn quốc chỉ từ 1-3 ngày.</p>
+        </div>
+
+        <div class="feature">
+            <h3>⭐ Chất Lượng Cao</h3>
+            <p>Nguyên liệu được tuyển chọn kỹ lưỡng.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🔄 Đổi Trả Dễ Dàng</h3>
+            <p>Hỗ trợ đổi trả trong vòng 30 ngày.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Bộ Sưu Tập Mới Đã Có Mặt</h2>
+    <p>Giảm giá lên đến 40% cho khách hàng mới.</p>
+    <br><br>
+    <a href="#" class="btn">Khám Phá Ngay</a>
+</section>
+
+<footer>
+    <p>© 2026 Urban Fashion. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+```
